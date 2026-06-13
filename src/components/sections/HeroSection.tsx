@@ -20,19 +20,19 @@ export function HeroSection() {
             {/* Badge */}
             <div className="inline-flex items-center self-start rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
               <Sparkles className="mr-2 h-4 w-4" />
-              #1 Print Hub in the City
+              #1 Print & Stationery Hub
             </div>
 
             {/* Heading */}
             <h1 className="font-heading font-black text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] text-secondary">
-              Print Fast, <br />
-              <span className="text-primary">Print Perfect</span> <br />
+              Perfect Prints & <br />
+              <span className="text-primary">Premium Stationery</span> <br />
               Every Time! 🎨
             </h1>
 
             {/* Subtext */}
             <p className="text-lg text-muted-foreground max-w-[520px] leading-relaxed">
-              From xerox to custom t-shirts — Creativity is your complete printing partner. Lightning-fast service, unbeatable quality, and prices students love!
+              From xerox and custom t-shirts to essential office supplies — Creativity is your complete printing & stationery partner. Lightning-fast service, unbeatable quality, and prices students love!
             </p>
 
             {/* CTA Buttons */}
