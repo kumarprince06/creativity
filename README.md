@@ -1,74 +1,72 @@
-# React + TypeScript + Vite
+# Creativity - Premium Stationery Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**[View Live Demo](https://creativity-theta-seven.vercel.app/gallery)**
 
-Currently, two official plugins are available:
+Welcome to **Creativity**, a high-end, dynamically styled stationery portal built for production. This application emphasizes beautiful, robust user experiences, top-tier SEO optimizations, and type-safe front-end architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Features
 
-## React Compiler
+- **Dynamic SEO Optimization**: Integrated `react-helmet-async` for tailored metadata per page.
+- **Premium UI/UX**: Built with Tailwind CSS, utilizing curated modern design tokens, sleek typography (Poppins & Nunito), and Framer Motion for fluid micro-animations.
+- **Accessible Components**: Harnessing the power of Radix UI primitives.
+- **Robust Form Validation**: Client-side validation managed by React Hook Form & Zod for optimal data integrity.
+- **Responsive Design**: Flawless experience across desktops, tablets, and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React](https://react.dev/) 19 + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **SEO**: [React Helmet Async](https://github.com/staylor/react-helmet-async)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1. **Clone the repository** (if applicable) or navigate to the project directory:
+   ```bash
+   cd Creativity
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`.
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/       # Reusable UI components (buttons, inputs, cards, etc.)
+│   ├── layout/       # Layout specific components (Navbar, Footer, etc.)
+│   └── ui/           # Base UI primitives
+├── layouts/          # Page layout wrappers (MainLayout, etc.)
+├── pages/            # Page components corresponding to routes (Home, About, Services, etc.)
+├── main.tsx          # Application entry point
+└── index.css         # Global styles and Tailwind directives
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📜 Available Scripts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Type-checks the TypeScript code and bundles the app for production.
+- `npm run preview`: Locally previews the production build.
+- `npm run lint`: Runs ESLint to catch formatting or type issues.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# creativity
+## 🎨 Design Aesthetics
+
+This project prioritizes visual excellence. We utilize curated color palettes, glassmorphism, dynamic animations, and optimal typography.
