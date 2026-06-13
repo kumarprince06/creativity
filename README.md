@@ -1,6 +1,6 @@
 # Creativity - Premium Stationery Portal
 
-**[View Live Demo](https://creativity-theta-seven.vercel.app/gallery)**
+**[View Live Demo](https://creativity-theta-seven.vercel.app)**
 
 Welcome to **Creativity**, a high-end, dynamically styled stationery portal built for production. This application emphasizes beautiful, robust user experiences, top-tier SEO optimizations, and type-safe front-end architecture.
 
