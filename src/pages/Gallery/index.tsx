@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const categories = ["All Work", "Printing", "T-Shirts", "Mugs & Gifts", "Binding", "Photos"];
 
@@ -33,6 +34,12 @@ export default function GalleryPage() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Gallery & Portfolio" 
+        description="View our portfolio of premium print work, custom t-shirt designs, beautifully bound books, and custom mug prints." 
+        keywords="printing gallery, custom t-shirts Howrah, book binding examples, print quality" 
+        url="/gallery"
+      />
       {/* Hero */}
       <section className="bg-secondary py-20 md:py-28 text-center">
         <div className="container mx-auto px-4 md:px-6">

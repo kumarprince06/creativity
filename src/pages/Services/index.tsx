@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Copy, Printer, Shirt, Coffee, Camera, BookOpen, Layers, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 
 const categories = [
   { id: "xerox", label: "Xerox", icon: Copy },
@@ -134,6 +135,12 @@ export default function ServicesPage() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Our Services" 
+        description="Explore our wide range of services including Xerox, color printing, custom t-shirt and mug printing, lamination, and spiral binding in Belur." 
+        keywords="Xerox services Belur, color printing Howrah, custom t-shirt printing, photo printing, spiral binding" 
+        url="/services"
+      />
       {/* Hero */}
       <section className="bg-secondary py-20 md:py-28 text-center relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 relative z-10">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Target, Eye, Heart, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { APP_ROUTES } from "@/constants";
+import { SEO } from "@/components/SEO";
 
 const corePillars = [
   {
@@ -67,6 +68,12 @@ const milestones = [
 export default function AboutPage() {
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="About Us" 
+        description="Learn more about Creativity's mission and journey since 2015. We are dedicated to providing the best printing and stationery solutions for the local community." 
+        keywords="about Creativity printing, printing shop history, stationery experts Belur" 
+        url="/about"
+      />
       {/* Hero Section */}
       <section className="bg-[#F8FAFC] py-20 md:py-28 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">

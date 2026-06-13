@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Search, Star, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { SEO } from "@/components/SEO";
 
 const categories = ["All Products", "Notebooks & Paper", "Pens & Pencils", "Art & Craft", "Office Supplies"];
 
@@ -29,6 +30,12 @@ export default function ProductsPage() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Products & Supplies" 
+        description="Browse our curated collection of premium stationery, art supplies, and office essentials at unbeatable prices in Belur." 
+        keywords="stationery products Belur, art supplies Howrah, notebooks, pens, office essentials" 
+        url="/products"
+      />
       {/* Hero */}
       <section className="bg-secondary py-20 md:py-28 text-center">
         <div className="container mx-auto px-4 md:px-6">

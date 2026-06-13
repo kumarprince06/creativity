@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/form";
 import { motion } from "framer-motion";
 import { STORE_INFO } from "@/constants";
+import { SEO } from "@/components/SEO";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -69,6 +70,12 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with Creativity in Belur, Howrah. Reach out via WhatsApp, call us, or visit our store. We respond fast to all printing and stationery inquiries." 
+        keywords="contact Creativity, Belur print shop, Howrah stationery store contact, WhatsApp print order" 
+        url="/contact"
+      />
       {/* Hero */}
       <section className="bg-secondary py-20 md:py-28 text-center">
         <div className="container mx-auto px-4 md:px-6">
