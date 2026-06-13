@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +11,7 @@ export function MainLayout() {
 
   return (
     <div className="flex min-h-screen flex-col relative">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-1">
         <Outlet />
