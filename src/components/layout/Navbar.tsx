@@ -67,13 +67,16 @@ export function Navbar() {
                   <Link
                     key={link.name}
                     to={link.path}
-                    className={`px-5 py-2 rounded-full text-sm font-bold font-heading transition-all ${
+                    className={`relative px-4 py-2 text-sm font-bold font-heading transition-colors flex justify-center ${
                       isActive
-                        ? "text-primary border-2 border-primary bg-white"
-                        : "text-secondary hover:text-primary border-2 border-transparent"
+                        ? "text-primary"
+                        : "text-secondary hover:text-primary"
                     }`}
                   >
                     {link.name}
+                    {isActive && (
+                      <span className="absolute bottom-0 w-[calc(100%-32px)] h-[3px] rounded-full bg-primary" />
+                    )}
                   </Link>
                 );
               })}
