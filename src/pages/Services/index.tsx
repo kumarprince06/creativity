@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Copy, Printer, Shirt, Coffee, Camera, BookOpen, Layers, CheckCircle2 } from "lucide-react";
+import { Copy, Printer, Shirt, Coffee, Camera, BookOpen, Layers, CheckCircle2, MessageCircle, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 
@@ -268,20 +268,21 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="rounded-full h-14 px-8 text-base font-bold font-heading bg-white text-[#25D366] hover:bg-white/90 shadow-lg"
+              className="rounded-full h-14 px-8 text-base font-bold font-heading bg-white text-secondary hover:bg-gray-50 shadow-lg border-0"
               asChild
             >
               <a href="https://wa.me/919831983105" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5 text-green-500" />
                 WhatsApp Us
               </a>
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="rounded-full h-14 px-8 text-base font-bold font-heading border-2 border-white/40 text-white hover:bg-white/10"
+              className="rounded-full h-14 px-8 text-base font-bold font-heading bg-transparent border-2 border-white text-white hover:bg-white/10 shadow-none"
               asChild
             >
               <a href={`/contact`}>
+                <MapPin className="mr-2 h-5 w-5" />
                 Visit Our Store
               </a>
             </Button>

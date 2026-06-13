@@ -276,17 +276,17 @@ export default function AboutPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-secondary text-center py-20 md:py-24 px-4">
+      <section className="bg-primary text-center py-20 md:py-24 px-4">
         <div className="container mx-auto max-w-3xl">
           <h2 className="font-heading font-black text-3xl md:text-5xl text-white mb-6 leading-tight">
             Ready to Experience the Creativity Difference?
           </h2>
-          <p className="text-white/60 text-lg mb-10">
+          <p className="text-white/90 text-lg mb-10">
             Join thousands of happy customers who trust us with their printing and stationery needs.
           </p>
           <Button
             size="lg"
-            className="rounded-full h-14 px-10 text-base font-bold font-heading bg-primary text-white hover:bg-primary/90 shadow-lg"
+            className="rounded-full h-14 px-10 text-base font-bold font-heading bg-white text-secondary hover:bg-gray-50 shadow-lg"
             asChild
           >
             <Link to={APP_ROUTES.SERVICES}>
